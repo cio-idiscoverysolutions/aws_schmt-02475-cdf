@@ -108,6 +108,16 @@ view: emails_report {
     sql: ${TABLE}.Sent_Date_Hour ;;
   }
 
+  dimension: communication_date_day_of_week {
+    type: string
+    sql: ${TABLE}.communication_Date_DAY_OF_WEEK ;;
+  }
+
+  dimension: communication_date_hour {
+    type: number
+    sql: ${TABLE}.communication_Date_Hour ;;
+  }
+
   dimension: subject {
     type: string
     sql: ${TABLE}.Subject ;;
